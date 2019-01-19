@@ -7,9 +7,7 @@ export const login = uid => ({
 });
 
 // ASYNC LOGIN
-export const startLogin = () => {
-  firebase.auth().signInWithPopup(googleAuthProvider);
-};
+export const startLogin = () => firebase.auth().signInWithPopup(googleAuthProvider);
 
 // LOGOUT
 export const logout = () => ({
