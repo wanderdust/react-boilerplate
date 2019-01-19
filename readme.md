@@ -1,1 +1,1 @@
-# Expensify app
+# React Boilerplate!

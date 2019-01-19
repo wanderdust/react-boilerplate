@@ -1,9 +1,9 @@
 import React from 'react';
 
-export const DashbardPage = () => (
+export const DashBoardPage = () => (
   <div>
-      DashbardPage content
+      DashBoardPage content
   </div>
 );
 
-export default DashbardPage;
+export default DashBoardPage;
