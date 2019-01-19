@@ -1,26 +1,20 @@
-import { firebase, googleAuthProvider } from "../firebase/firebase";
+import { firebase, googleAuthProvider } from '../firebase/firebase';
 
-//LOGIN
-export const login = (uid) => ({
-    type: "LOGIN",
-    uid
+// LOGIN
+export const login = uid => ({
+  type: 'LOGIN',
+  uid
 });
 
-//ASYNC LOGIN
+// ASYNC LOGIN
 export const startLogin = () => {
-    return () => {
-        return firebase.auth().signInWithPopup(googleAuthProvider);
-    };
+  firebase.auth().signInWithPopup(googleAuthProvider);
 };
 
-//LOGOUT
+// LOGOUT
 export const logout = () => ({
-    type: "LOGOUT"
+  type: 'LOGOUT'
 });
 
-//ASYNC LOGOUT
-export const startLogout = () => {
-    return () => {
-        return firebase.auth().signOut();
-    };
-};
+// ASYNC LOGOUT
+export const startLogout = () => () => firebase.auth().signOut();

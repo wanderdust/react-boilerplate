@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react';
 
 export const DashbardPage = () => (
-    <div>
-        DashbardPage content
-    </div>
+  <div>
+      DashbardPage content
+  </div>
 );
 
 export default DashbardPage;

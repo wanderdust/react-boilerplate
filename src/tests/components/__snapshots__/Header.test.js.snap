@@ -21,7 +21,8 @@ exports[`should render header correctly 1`] = `
       </Link>
       <button
         className="button button--link"
-        onClick={[MockFunction]}
+        onClick={[Function]}
+        type="button"
       >
         Logout
       </button>
